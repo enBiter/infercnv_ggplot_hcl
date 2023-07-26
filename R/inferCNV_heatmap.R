@@ -6,16 +6,19 @@
 # Returns:
 # Color Palette
 
-# shameless copy of dst53/infercnv_edit
-gg_color_hue <- function(n) {
-  hues = seq(15, 275, length = n + 1)
-  hcl(h = hues, l = 65, c = 100)[1:n]
-}
+# palette 6 from jaredhuling/jcolors
+pal6 <- c('rackley'          = "#558aa6",
+          'dark_goldenrod'   = "#B1740F",
+          'rubine_red'       = "#D5006A",
+          'midnight_green'   = "#08585A",
+          'canary'           = "#FFFD98",
+          'dark_orchid'      = "#9449d2",
+          'dark_khaki'       = "#BBBE64",
+          'rusty_red'        = "#D7263D")
 
 get_group_color_palette <- function(){
-  return(colorRampPalette(gg_color_hue(12)))
+  return(colorRampPalette(pal6))
 }
-
 
 #' @description Formats the data and sends it for plotting.
 #'
