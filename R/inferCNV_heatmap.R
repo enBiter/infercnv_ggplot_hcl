@@ -6,7 +6,7 @@
 # Returns:
 # Color Palette
 get_group_color_palette <- function(){
-    return(colorRampPalette(RColorBrewer::brewer.pal(12,"Set3")))
+    return(colorRampPalette(ggsci::pal_jco()(10)))
 }
 
 
