@@ -10,7 +10,7 @@
 pal6 <- c('rackley'          = "#558aa6",
           'midnight_green'   = "#08585A",
           'dark_goldenrod'   = "#B1740F",
-          'canary'           = "#FFFD98",
+          'safety_orange'  = "#FE6900",
           'dark_orchid'      = "#9449d2",
           'dark_khaki'       = "#BBBE64",
           'rusty_red'        = "#D7263D")
