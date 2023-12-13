@@ -19,6 +19,7 @@ plot_per_group(
   save_objects = FALSE,
   png_res = 300,
   dynamic_resize = 0,
+  useRaster = TRUE,
   out_dir
 )
 }
@@ -56,6 +57,8 @@ Will be followed by OBS/REF to indidate the type of the group, and the group nam
 \item{dynamic_resize}{Factor (>= 0) by which to scale the dynamic resize of the observation 
 heatmap and the overall plot based on how many cells there are.
 Default is 0, which disables the scaling. Try 1 first if you want to enable. (Default: 0)}
+
+\item{useRaster}{Whether to use rasterization for drawing heatmap. Only disable if it produces an error as it is much faster than not using it.}
 
 \item{out_dir}{Directory in which to save plots and other outputs.}
 }

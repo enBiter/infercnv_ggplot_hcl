@@ -472,6 +472,8 @@ sample_object <- function(infercnv_obj,
 #'
 #' @param on_references  boolean (default=TRUE), plot references (normal cells).
 #'
+#' @param useRaster Whether to use rasterization for drawing heatmap. Only disable if it produces an error as it is much faster than not using it.
+#' 
 #' @return void
 #'
 #' @export
@@ -514,6 +516,7 @@ plot_per_group <- function(infercnv_obj,
     save_objects=FALSE,
     png_res=300,
     dynamic_resize=0,
+    useRaster=TRUE,
     out_dir) {
 
     plot_center = mean(infercnv_obj@expr.data)
@@ -583,7 +586,8 @@ plot_per_group <- function(infercnv_obj,
                 png_res=png_res,
                 dynamic_resize=dynamic_resize,
                 ref_contig=NULL,
-                write_expr_matrix=write_expr_matrix
+                write_expr_matrix=write_expr_matrix,
+                useRaster=useRaster
                 )
         }
     }
@@ -649,7 +653,8 @@ plot_per_group <- function(infercnv_obj,
                 png_res=png_res,
                 dynamic_resize=dynamic_resize,
                 ref_contig=NULL,
-                write_expr_matrix=write_expr_matrix
+                write_expr_matrix=write_expr_matrix,
+                useRaster=useRaster
                 )
         }
     }
